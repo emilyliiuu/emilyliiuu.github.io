@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bird Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="back-button" href="index.html">← Back to Home</a>
+
+    <h1>Bird Simulator (FPV Flight System)</h1>
+
+        🥇 Senior Design (ECE445) Project — Awarded 1st Place out of 103 teams  🥇 
+    </h2>
+
+    <img src="images/drone.jpg" class="img" alt="FPV Drone">
+
+    <p class="tech">
+    STM32 • Embedded C • IMU Sensor Fusion • RF Systems • PCB Design • Control Systems
+    </p>
+
+    <p>
+    A custom-built FPV drone system with wearable IMU-based motion control,
+    integrating embedded flight control, RF video transmission, and custom PCB hardware design.
+    </p>
+
+    <div class="video-container">
+    <iframe
+        src="https://www.youtube.com/embed/XCYLybzR4Y4"
+        title="Bird Simulator Demo"
+        allowfullscreen>
+    </iframe>
+    </div>
+
+    <div class="card">
+        <h2>System Overview</h2>
+        <ul>
+            <li>Custom STM32-based flight controller</li>
+            <li>5.8 GHz FPV video transmission system</li>
+            <li>2.4 GHz wireless control link</li>
+            <li>Wearable IMU-based motion input system (“bird suit”)</li>
+            
+
+            <li>High-level architecture</li>
+
+            <button class="button" onclick="openDiagram()">
+                View Block Diagram
+            </button>
+        </ul>
+    </div>
+    <div id="diagramModal" class="modal" onclick="closeDiagram()">
+    <img id="diagramImg" src="images/drone_block.jpg" alt="Block Diagram">
+    </div>
+    
+   <div class="card">
+        <h2>My Contributions</h2>
+            <ul>
+            <li>Designed embedded firmware for IMU and RF subsystems using SPI/I2C</li>
+            <li>Developed flight stabilization and auto-leveling control logic</li>
+            <li>Designed and fabricated custom PCB integrating RF + sensor systems</li>
+            <li>Built wearable IMU interface for motion-based flight control</li>
+        </ul>
+   </div>
+    
+    <div class="card">
+        <h2>Links</h2>
+        <a class="button" href="https://youtube.com/YOUR_VIDEO">Demo Video</a>
+        <a class="button" href="https://github.com/YOUR_REPO">GitHub</a>
+    </div>
+    
+    <script>
+    function openDiagram() {
+    document.getElementById("diagramModal").style.display = "flex";
+    }
+
+    function closeDiagram() {
+    document.getElementById("diagramModal").style.display = "none";
+    }
+    </script>
+</body>
+</html>
