@@ -21,10 +21,8 @@ body {
 
     background-color: rgba(17, 24, 38, 0.95);
 
-    /* Rounded corners */
     border-radius: 16px;
 
-    /* Optional: makes it look like a floating panel */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 
     background-color: #0b0f14;
